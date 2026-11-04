@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.claro {
+  --fundo: #ffffff;
+  --texto: #1f2933;
+  --destaque: #2e75b6;
+  background-color: var(--fundo);
+  color: var(--texto);
+  min-height: 100vh;
+  padding: 24px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.escuro {
+  --fundo: #1f2933;
+  --texto: #f5f7fa;
+  --destaque: #7cb8ee;
+  background-color: var(--fundo);
+  color: var(--texto);
+  min-height: 100vh;
+  padding: 24px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+button {
+  background-color: var(--destaque);
+  color: var(--fundo);
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+input {
+  padding: 8px 12px;
+  border: 1px solid var(--destaque);
+  border-radius: 4px;
+  background-color: var(--fundo);
+  color: var(--texto);
+}
+
+.toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--destaque);
+  color: var(--fundo);
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
